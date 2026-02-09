@@ -1,74 +1,74 @@
-local function p65bywi(n)
+local function rs0rz5(n)
 local a,r="abcdefghijklmnopqrstuvwxyz","" local b=a.."0123456789_"
 r=a:sub(math.random(1,#a),math.random(1,#a))
 for i=2,(n or math.random(5,9)) do local x=math.random(1,#b) r=r..b:sub(x,x) end return r end
-local _I={} local function budlo() _I={yzx=p65bywi(8),u0hngt=p65bywi(8),noxd=p65bywi(7),wmg3=p65bywi(7),pup=p65bywi(6),ubjsh=p65bywi(6),zswue=p65bywi(6),fyljq=p65bywi(6),oeyq=p65bywi(6),t7fts=p65bywi(6),z7a=p65bywi(6),m7fjhf=p65bywi(7)} end
-budlo()
-local function bdgi0(f,...) pcall(f,...) end
-local ci4tu=game:GetService("Players") local j8e26k=game:GetService("RunService") local blsxcy=game:GetService("UserInputService")
-local hefrja=workspace.CurrentCamera local gwfo3x=ci4tu.LocalPlayer local ebjt,d23yd=true,{}
-local vhq={sgu=false,onq5mr=false,tvsd=false,ir9=false,iujt1=5,jhw="Head",aposx=false,dkwzl6=false,qqh6=false,b5431=true,cd4=false,wnbd=false,qt2ne=false,uiq=16,zfu3l=50,ux_6j=70,sa50vt=false,b2qid=false,qeg5f4=196,udbx=false,hzvq=false,p50=false,sag=false,kfjl04=false,g1liv=false,kp_f2=false,thg3ok=false,hy43=Enum.KeyCode.RightShift,fh3p=Color3.fromRGB(255,0,0),z1of=Color3.fromRGB(255,255,0),ko_o=0.7,ln12=0.3,fiko=Color3.fromRGB(0,255,136),kga0j0=Color3.fromRGB(255,255,0),z4e8=Color3.fromRGB(255,50,50),tilfs=Color3.fromRGB(255,0,255)}
-local pgxurt,eb6,uox,cx2im={},{},{},{}
-local b756,tm9n3r,criq06,kn0,y_t,twm,d226lj
-local n14fv,wo38={},0
-local n0k={}
-local gr3r2={{"Head","UpperTorso"},{"UpperTorso","LowerTorso"},{"UpperTorso","LeftUpperArm"},{"LeftUpperArm","LeftLowerArm"},{"LeftLowerArm","LeftHand"},{"UpperTorso","RightUpperArm"},{"RightUpperArm","RightLowerArm"},{"RightLowerArm","RightHand"},{"LowerTorso","LeftUpperLeg"},{"LeftUpperLeg","LeftLowerLeg"},{"LeftLowerLeg","LeftFoot"},{"LowerTorso","RightUpperLeg"},{"RightUpperLeg","RightLowerLeg"},{"RightLowerLeg","RightFoot"}}
-local li2bt7={{"Head","Torso"},{"Torso","Left Arm"},{"Torso","Right Arm"},{"Torso","Left Leg"},{"Torso","Right Leg"}}
-local function mt2j7b9mt()
-ebjt=false
-for _,c in pairs(d23yd) do bdgi0(function() c:Disconnect() end) end d23yd={}
-for _,h in pairs(pgxurt) do bdgi0(function() h:Destroy() end) end pgxurt={}
-for _,b in pairs(eb6) do bdgi0(function() b:Destroy() end) end eb6={}
-for _,s in pairs(uox) do for _,l in pairs(s) do pcall(function() l:Remove() end) end end uox={}
-for _,b in pairs(cx2im) do for _,l in pairs(b) do pcall(function() l:Remove() end) end end cx2im={}
-for _,t in pairs(n0k) do pcall(function() t:Remove() end) end n0k={}
-bdgi0(function() if kn0 then kn0:Remove() end end)
-bdgi0(function() if y_t then y_t:Destroy() end end)
-bdgi0(function() if twm then twm:Destroy() end end)
-bdgi0(function() if d226lj then d226lj:Destroy() end end)
-bdgi0(function() if b756 then b756:Destroy() end end)
-bdgi0(function() if criq06 then criq06:Destroy() end end)
+local _I={} local function hrk_f8q43() _I={rdq04=rs0rz5(8),sr9=rs0rz5(8),puzk=rs0rz5(7),xgz_=rs0rz5(7),v3oemy=rs0rz5(6),k4i=rs0rz5(6),tza0=rs0rz5(6),mm8=rs0rz5(6),qbw=rs0rz5(6),pua=rs0rz5(6),xu33j=rs0rz5(6),cu2lwv=rs0rz5(7)} end
+hrk_f8q43()
+local function ov6_76ti_(f,...) pcall(f,...) end
+local b6cb=game:GetService("Players") local f8ll=game:GetService("RunService") local g3elwn=game:GetService("UserInputService")
+local twnp=workspace.CurrentCamera local qgel=b6cb.LocalPlayer local wv7j,ceq01=true,{}
+local k0gv={x7l=false,tqxzg9=false,sc8cqt=false,ymbjt=false,ct2=5,ugo7="Head",ft4on=false,xk5=false,tqt=false,bi7=true,pxks=false,wge8o=false,q1a=false,psjk=16,kdc0c9=50,ea3=70,cr3ru=false,yeyl8=false,upnh=196,hzwl5v=false,p5e=false,zwn=false,djg=false,xes9e8=false,g8jw50=false,ic9e4h=false,k3vf=false,saf4=Enum.KeyCode.RightShift,z469p=Color3.fromRGB(255,0,0),fke4=Color3.fromRGB(255,255,0),w3v_89=0.7,gpm=0.3,bdt=Color3.fromRGB(0,255,136),k0g=Color3.fromRGB(255,255,0),kmg8=Color3.fromRGB(255,50,50),lpxz6q=Color3.fromRGB(255,0,255)}
+local ovp95,wn4,knp,p0z4v_={},{},{},{}
+local r381o,g529e,md91,g49m2,s1xld,v3kkm,o_s2
+local pt6hdb,ezj={},0
+local thwxko={}
+local gasjkb={{"Head","UpperTorso"},{"UpperTorso","LowerTorso"},{"UpperTorso","LeftUpperArm"},{"LeftUpperArm","LeftLowerArm"},{"LeftLowerArm","LeftHand"},{"UpperTorso","RightUpperArm"},{"RightUpperArm","RightLowerArm"},{"RightLowerArm","RightHand"},{"LowerTorso","LeftUpperLeg"},{"LeftUpperLeg","LeftLowerLeg"},{"LeftLowerLeg","LeftFoot"},{"LowerTorso","RightUpperLeg"},{"RightUpperLeg","RightLowerLeg"},{"RightLowerLeg","RightFoot"}}
+local hfx_0={{"Head","Torso"},{"Torso","Left Arm"},{"Torso","Right Arm"},{"Torso","Left Leg"},{"Torso","Right Leg"}}
+local function hl9m4()
+wv7j=false
+for _,c in pairs(ceq01) do ov6_76ti_(function() c:Disconnect() end) end ceq01={}
+for _,h in pairs(ovp95) do ov6_76ti_(function() h:Destroy() end) end ovp95={}
+for _,b in pairs(wn4) do ov6_76ti_(function() b:Destroy() end) end wn4={}
+for _,s in pairs(knp) do for _,l in pairs(s) do pcall(function() l:Remove() end) end end knp={}
+for _,b in pairs(p0z4v_) do for _,l in pairs(b) do pcall(function() l:Remove() end) end end p0z4v_={}
+for _,t in pairs(thwxko) do pcall(function() t:Remove() end) end thwxko={}
+ov6_76ti_(function() if g49m2 then g49m2:Remove() end end)
+ov6_76ti_(function() if s1xld then s1xld:Destroy() end end)
+ov6_76ti_(function() if v3kkm then v3kkm:Destroy() end end)
+ov6_76ti_(function() if o_s2 then o_s2:Destroy() end end)
+ov6_76ti_(function() if r381o then r381o:Destroy() end end)
+ov6_76ti_(function() if md91 then md91:Destroy() end end)
 end
-table.insert(d23yd,ci4tu.PlayerRemoving:Connect(function(pl) if pl==gwfo3x then mt2j7b9mt() end end))
-local function low9j0n()
-local ok,l=pcall(function() local d=Drawing.new("Line") d.Visible=false d.Color=vhq.fiko d.Thickness=2 d.Transparency=1 return d end)
+table.insert(ceq01,b6cb.PlayerRemoving:Connect(function(pl) if pl==qgel then hl9m4() end end))
+local function qa7olgij()
+local ok,l=pcall(function() local d=Drawing.new("Line") d.Visible=false d.Color=k0gv.bdt d.Thickness=2 d.Transparency=1 return d end)
 return ok and l or nil end
-local function acgcjd0a()
-bdgi0(function()
-if kn0 then kn0:Remove() kn0=nil end
-local ok,c=pcall(function() local d=Drawing.new("Circle") d.Color=vhq.z4e8 d.Thickness=2 d.NumSides=30 d.Filled=false d.Visible=false d.Transparency=1 return d end)
-if ok and c then kn0=c end end) end
-acgcjd0a()
-local function pgbo_2(on)
-bdgi0(function()
-local ch=gwfo3x.Character if not ch then return end
+local function lvzaxm()
+ov6_76ti_(function()
+if g49m2 then g49m2:Remove() g49m2=nil end
+local ok,c=pcall(function() local d=Drawing.new("Circle") d.Color=k0gv.kmg8 d.Thickness=2 d.NumSides=30 d.Filled=false d.Visible=false d.Transparency=1 return d end)
+if ok and c then g49m2=c end end) end
+lvzaxm()
+local function gxh1osdb(on)
+ov6_76ti_(function()
+local ch=qgel.Character if not ch then return end
 local rt=ch:FindFirstChild("HumanoidRootPart") if not rt then return end
 local hum=ch:FindFirstChildOfClass("Humanoid")
 if on then
-if y_t then y_t:Destroy() end
-if twm then twm:Destroy() end
-y_t=Instance.new("BodyVelocity") y_t.MaxForce=Vector3.new(1e5,1e5,1e5) y_t.Velocity=Vector3.new(0,0,0) y_t.Parent=rt
-twm=Instance.new("BodyGyro") twm.MaxTorque=Vector3.new(1e5,1e5,1e5) twm.D=100 twm.P=1e4 twm.Parent=rt
+if s1xld then s1xld:Destroy() end
+if v3kkm then v3kkm:Destroy() end
+s1xld=Instance.new("BodyVelocity") s1xld.MaxForce=Vector3.new(1e5,1e5,1e5) s1xld.Velocity=Vector3.new(0,0,0) s1xld.Parent=rt
+v3kkm=Instance.new("BodyGyro") v3kkm.MaxTorque=Vector3.new(1e5,1e5,1e5) v3kkm.D=100 v3kkm.P=1e4 v3kkm.Parent=rt
 if hum then hum.PlatformStand=true end
 else
-if y_t then y_t:Destroy() y_t=nil end
-if twm then twm:Destroy() twm=nil end
+if s1xld then s1xld:Destroy() s1xld=nil end
+if v3kkm then v3kkm:Destroy() v3kkm=nil end
 if hum then hum.PlatformStand=false end end end) end
-local function dimpxn()
-bdgi0(function()
-if not vhq.wnbd then return end
-local ch=gwfo3x.Character if not ch then return end
+local function f8b83xbk()
+ov6_76ti_(function()
+if not k0gv.wge8o then return end
+local ch=qgel.Character if not ch then return end
 for _,p in pairs(ch:GetDescendants()) do if p:IsA("BasePart") then p.CanCollide=false end end end) end
-local function vjeh8(on)
-bdgi0(function()
+local function fhb81i7lt(on)
+ov6_76ti_(function()
 local l=game:GetService("Lighting")
 if on then l.Brightness=2 l.ClockTime=14 l.FogEnd=1e6 l.GlobalShadows=false
 for _,e in pairs(l:GetChildren()) do if e:IsA("Atmosphere") or e:IsA("BloomEffect") or e:IsA("BlurEffect") or e:IsA("ColorCorrectionEffect") then e.Enabled=false end end
 else l.Brightness=1 l.GlobalShadows=true
 for _,e in pairs(l:GetChildren()) do if e:IsA("Atmosphere") or e:IsA("BloomEffect") or e:IsA("BlurEffect") or e:IsA("ColorCorrectionEffect") then e.Enabled=true end end
 end end) end
-local function lldsliq(on)
-bdgi0(function()
+local function fd_eu(on)
+ov6_76ti_(function()
 local l=game:GetService("Lighting")
 if on then
 if not l:FindFirstChild("_nv") then
@@ -77,114 +77,114 @@ l.Brightness=3 l.FogEnd=1e6
 else
 local cc=l:FindFirstChild("_nv") if cc then cc:Destroy() end
 l.Brightness=1 end end) end
-local function ferfnici(on)
-bdgi0(function()
+local function m1sq0(on)
+ov6_76ti_(function()
 if on then
-local vu=gwfo3x:FindFirstChildOfClass("VirtualUser")
+local vu=qgel:FindFirstChildOfClass("VirtualUser")
 if not vu then vu=game:GetService("VirtualUser") end
-table.insert(d23yd,j8e26k.Heartbeat:Connect(function()
-if vhq.udbx then bdgi0(function() vu:CaptureController() vu:ClickButton2(Vector2.new()) end) end
+table.insert(ceq01,f8ll.Heartbeat:Connect(function()
+if k0gv.hzwl5v then ov6_76ti_(function() vu:CaptureController() vu:ClickButton2(Vector2.new()) end) end
 end))
 end end) end
-local function frj2e3xcw()
-bdgi0(function()
-local ch=gwfo3x.Character if not ch then return end
+local function q_sa70()
+ov6_76ti_(function()
+local ch=qgel.Character if not ch then return end
 local hum=ch:FindFirstChildOfClass("Humanoid") if not hum then return end
-table.insert(d23yd,hum.Died:Connect(function()
-if vhq.hzvq then task.wait(0.1) bdgi0(function() gwfo3x:LoadCharacter() end) end
+table.insert(ceq01,hum.Died:Connect(function()
+if k0gv.p5e then task.wait(0.1) ov6_76ti_(function() qgel:LoadCharacter() end) end
 end)) end) end
-local function ardym_x()
-bdgi0(function()
+local function cfmvmxyix()
+ov6_76ti_(function()
 local cs=game:GetService("Chat") if not cs then return end
-table.insert(d23yd,ci4tu.PlayerAdded:Connect(function(pl)
-table.insert(d23yd,pl.Chatted:Connect(function(msg)
-if vhq.thg3ok then print("[SPY] "..pl.Name..": "..msg) end
+table.insert(ceq01,b6cb.PlayerAdded:Connect(function(pl)
+table.insert(ceq01,pl.Chatted:Connect(function(msg)
+if k0gv.k3vf then print("[SPY] "..pl.Name..": "..msg) end
 end)) end))
-for _,pl in ipairs(ci4tu:GetPlayers()) do
-if pl~=gwfo3x then
-bdgi0(function() table.insert(d23yd,pl.Chatted:Connect(function(msg)
-if vhq.thg3ok then print("[SPY] "..pl.Name..": "..msg) end
+for _,pl in ipairs(b6cb:GetPlayers()) do
+if pl~=qgel then
+ov6_76ti_(function() table.insert(ceq01,pl.Chatted:Connect(function(msg)
+if k0gv.k3vf then print("[SPY] "..pl.Name..": "..msg) end
 end)) end) end end end) end
-local function e11yu5v(pl)
-bdgi0(function()
-if not vhq.kp_f2 then return end
+local function jjqncno3(pl)
+ov6_76ti_(function()
+if not k0gv.ic9e4h then return end
 local ch=pl.Character if not ch then return end
 local hum=ch:FindFirstChildOfClass("Humanoid") if not hum then return end
 hum.Died:Connect(function()
-bdgi0(function()
-game:GetService("StarterGui"):SetCore("SendNotification",{Title=p65bywi(4),Text=pl.DisplayName.." died",Duration=3})
+ov6_76ti_(function()
+game:GetService("StarterGui"):SetCore("SendNotification",{Title=rs0rz5(4),Text=pl.DisplayName.." died",Duration=3})
 end) end) end) end
-local function chnjgtd()
-bdgi0(function()
-if not kn0 then acgcjd0a() end
-if not kn0 then return end
-if not vhq.ir9 then kn0.Visible=false return end
-local vs=hefrja.ViewportSize
-kn0.Position=Vector2.new(vs.X/2,vs.Y/2)
-kn0.Radius=2+vhq.iujt1*2
-kn0.Visible=true
-if vhq.g1liv then wo38=wo38+3 if wo38>360 then wo38=0 end
-kn0.Color=Color3.fromHSV(wo38/360,1,1) end
+local function wmga31m()
+ov6_76ti_(function()
+if not g49m2 then lvzaxm() end
+if not g49m2 then return end
+if not k0gv.ymbjt then g49m2.Visible=false return end
+local vs=twnp.ViewportSize
+g49m2.Position=Vector2.new(vs.X/2,vs.Y/2)
+g49m2.Radius=2+k0gv.ct2*2
+g49m2.Visible=true
+if k0gv.g8jw50 then ezj=ezj+3 if ezj>360 then ezj=0 end
+g49m2.Color=Color3.fromHSV(ezj/360,1,1) end
 local best,bdist=nil,math.huge
 local cx,cy=vs.X/2,vs.Y/2
-local rad=(2+vhq.iujt1*2)*15
-local tgt=vhq.jhw
-for _,pl in ipairs(ci4tu:GetPlayers()) do
-if pl~=gwfo3x and pl.Character then
+local rad=(2+k0gv.ct2*2)*15
+local tgt=k0gv.ugo7
+for _,pl in ipairs(b6cb:GetPlayers()) do
+if pl~=qgel and pl.Character then
 local part=pl.Character:FindFirstChild(tgt)
 if not part and tgt~="Head" then part=pl.Character:FindFirstChild("UpperTorso") or pl.Character:FindFirstChild("Torso") end
-if part then local sp,vis=hefrja:WorldToViewportPoint(part.Position)
+if part then local sp,vis=twnp:WorldToViewportPoint(part.Position)
 if vis then local dx,dy=sp.X-cx,sp.Y-cy local d=math.sqrt(dx*dx+dy*dy)
 if d<rad and d<bdist then best,bdist=pl,d end end end end end
 if best and best.Character then
 local part=best.Character:FindFirstChild(tgt)
 if not part and tgt~="Head" then part=best.Character:FindFirstChild("UpperTorso") or best.Character:FindFirstChild("Torso") end
-if part then hefrja.CFrame=CFrame.new(hefrja.CFrame.Position,part.Position) end end end) end
-local function wpclk22(pl)
-if pl==gwfo3x then return end
-bdgi0(function()
+if part then twnp.CFrame=CFrame.new(twnp.CFrame.Position,part.Position) end end end) end
+local function il2t4(pl)
+if pl==qgel then return end
+ov6_76ti_(function()
 local ch=pl.Character if not ch then return end
-if pgxurt[pl] then bdgi0(function() pgxurt[pl]:Destroy() end) pgxurt[pl]=nil end
-if not vhq.sgu then return end
-local h=Instance.new("Highlight") h.Name=_I.noxd..p65bywi(4)
-if vhq.g1liv then h.FillColor=Color3.fromHSV(math.random(),1,1) h.OutlineColor=Color3.fromHSV(math.random(),1,1)
-else h.FillColor=vhq.fh3p h.OutlineColor=vhq.z1of end
-h.FillTransparency=vhq.ko_o h.OutlineTransparency=vhq.ln12 h.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop h.Adornee=ch h.Parent=ch
-if vhq.sag then for _,p in pairs(ch:GetDescendants()) do if p:IsA("BasePart") then p.Transparency=0.5 end end end
-pgxurt[pl]=h end) end
-local function fqhably(pl) bdgi0(function() if pgxurt[pl] then pgxurt[pl]:Destroy() pgxurt[pl]=nil end end) end
-local function zanfci(pl)
-if pl==gwfo3x or uox[pl] then return end
-local ls={} for i=1,14 do local l=low9j0n() if l then ls[i]=l end end uox[pl]=ls end
-local function svz199(pl) bdgi0(function() if uox[pl] then for _,l in pairs(uox[pl]) do pcall(function() l:Remove() end) end uox[pl]=nil end end) end
-local function b4ki81or(pl)
-bdgi0(function()
-if not vhq.onq5mr then if uox[pl] then for _,l in pairs(uox[pl]) do pcall(function() l.Visible=false end) end end return end
+if ovp95[pl] then ov6_76ti_(function() ovp95[pl]:Destroy() end) ovp95[pl]=nil end
+if not k0gv.x7l then return end
+local h=Instance.new("Highlight") h.Name=_I.puzk..rs0rz5(4)
+if k0gv.g8jw50 then h.FillColor=Color3.fromHSV(math.random(),1,1) h.OutlineColor=Color3.fromHSV(math.random(),1,1)
+else h.FillColor=k0gv.z469p h.OutlineColor=k0gv.fke4 end
+h.FillTransparency=k0gv.w3v_89 h.OutlineTransparency=k0gv.gpm h.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop h.Adornee=ch h.Parent=ch
+if k0gv.djg then for _,p in pairs(ch:GetDescendants()) do if p:IsA("BasePart") then p.Transparency=0.5 end end end
+ovp95[pl]=h end) end
+local function fzra2kmx(pl) ov6_76ti_(function() if ovp95[pl] then ovp95[pl]:Destroy() ovp95[pl]=nil end end) end
+local function amjxyd0af(pl)
+if pl==qgel or knp[pl] then return end
+local ls={} for i=1,14 do local l=qa7olgij() if l then ls[i]=l end end knp[pl]=ls end
+local function rgog8ax8r(pl) ov6_76ti_(function() if knp[pl] then for _,l in pairs(knp[pl]) do pcall(function() l:Remove() end) end knp[pl]=nil end end) end
+local function d7fjb5jw(pl)
+ov6_76ti_(function()
+if not k0gv.tqxzg9 then if knp[pl] then for _,l in pairs(knp[pl]) do pcall(function() l.Visible=false end) end end return end
 local ch=pl.Character if not ch then return end
-zanfci(pl) local ls=uox[pl] if not ls then return end
-local r15=ch:FindFirstChild("UpperTorso")~=nil local cn=r15 and gr3r2 or li2bt7
+amjxyd0af(pl) local ls=knp[pl] if not ls then return end
+local r15=ch:FindFirstChild("UpperTorso")~=nil local cn=r15 and gasjkb or hfx_0
 for i,c in ipairs(cn) do
 local a,b=ch:FindFirstChild(c[1]),ch:FindFirstChild(c[2])
 if a and b and ls[i] then
-local pA,oA=hefrja:WorldToViewportPoint(a.Position) local pB,oB=hefrja:WorldToViewportPoint(b.Position)
+local pA,oA=twnp:WorldToViewportPoint(a.Position) local pB,oB=twnp:WorldToViewportPoint(b.Position)
 if oA and oB then ls[i].From=Vector2.new(pA.X,pA.Y) ls[i].To=Vector2.new(pB.X,pB.Y) ls[i].Visible=true
-if vhq.g1liv then ls[i].Color=Color3.fromHSV(wo38/360,1,1) end
+if k0gv.g8jw50 then ls[i].Color=Color3.fromHSV(ezj/360,1,1) end
 else ls[i].Visible=false end
 elseif ls[i] then ls[i].Visible=false end end
 for i=#cn+1,#ls do if ls[i] then ls[i].Visible=false end end end) end
-local function zj2xq(pl)
-if pl==gwfo3x or cx2im[pl] then return end
+local function t7u0_v(pl)
+if pl==qgel or p0z4v_[pl] then return end
 local ls={} for i=1,4 do
-local ok,l=pcall(function() local d=Drawing.new("Line") d.Visible=false d.Color=vhq.kga0j0 d.Thickness=1.5 d.Transparency=1 return d end)
-if ok and l then ls[i]=l end end cx2im[pl]=ls end
-local function l1a40x(pl) bdgi0(function() if cx2im[pl] then for _,l in pairs(cx2im[pl]) do pcall(function() l:Remove() end) end cx2im[pl]=nil end end) end
-local function xaqxe_y(pl)
-bdgi0(function()
-if not vhq.tvsd then if cx2im[pl] then for _,l in pairs(cx2im[pl]) do pcall(function() l.Visible=false end) end end return end
+local ok,l=pcall(function() local d=Drawing.new("Line") d.Visible=false d.Color=k0gv.k0g d.Thickness=1.5 d.Transparency=1 return d end)
+if ok and l then ls[i]=l end end p0z4v_[pl]=ls end
+local function uc78c(pl) ov6_76ti_(function() if p0z4v_[pl] then for _,l in pairs(p0z4v_[pl]) do pcall(function() l:Remove() end) end p0z4v_[pl]=nil end end) end
+local function xzongtt(pl)
+ov6_76ti_(function()
+if not k0gv.sc8cqt then if p0z4v_[pl] then for _,l in pairs(p0z4v_[pl]) do pcall(function() l.Visible=false end) end end return end
 local ch=pl.Character if not ch then return end
 local rt=ch:FindFirstChild("HumanoidRootPart") if not rt then return end
-zj2xq(pl) local ls=cx2im[pl] if not ls or #ls<4 then return end
-local pos,vis=hefrja:WorldToViewportPoint(rt.Position)
+t7u0_v(pl) local ls=p0z4v_[pl] if not ls or #ls<4 then return end
+local pos,vis=twnp:WorldToViewportPoint(rt.Position)
 if not vis then for i=1,4 do if ls[i] then ls[i].Visible=false end end return end
 local sz=math.clamp(4000/(pos.Z),20,400) local hx,hy=sz*0.4,sz*0.9
 local cx,cy=pos.X,pos.Y
@@ -194,51 +194,51 @@ ls[1].From=tl ls[1].To=tr ls[1].Visible=true
 ls[2].From=tr ls[2].To=br ls[2].Visible=true
 ls[3].From=br ls[3].To=bl ls[3].Visible=true
 ls[4].From=bl ls[4].To=tl ls[4].Visible=true
-if vhq.g1liv then for i=1,4 do ls[i].Color=Color3.fromHSV(wo38/360,1,1) end end
+if k0gv.g8jw50 then for i=1,4 do ls[i].Color=Color3.fromHSV(ezj/360,1,1) end end
 end) end
-local function y6ua5x7(pl)
-if pl==gwfo3x or n0k[pl] then return end
-local ok,l=pcall(function() local d=Drawing.new("Line") d.Visible=false d.Color=vhq.tilfs d.Thickness=1.5 d.Transparency=0.8 return d end)
-if ok and l then n0k[pl]=l end end
-local function mfwl_ukjg(pl) bdgi0(function() if n0k[pl] then pcall(function() n0k[pl]:Remove() end) n0k[pl]=nil end end) end
-local function hyj93g6v(pl)
-bdgi0(function()
-if not vhq.b2qid then if n0k[pl] then n0k[pl].Visible=false end return end
+local function cvsdjb1(pl)
+if pl==qgel or thwxko[pl] then return end
+local ok,l=pcall(function() local d=Drawing.new("Line") d.Visible=false d.Color=k0gv.lpxz6q d.Thickness=1.5 d.Transparency=0.8 return d end)
+if ok and l then thwxko[pl]=l end end
+local function rn5uxrh(pl) ov6_76ti_(function() if thwxko[pl] then pcall(function() thwxko[pl]:Remove() end) thwxko[pl]=nil end end) end
+local function qrxne(pl)
+ov6_76ti_(function()
+if not k0gv.yeyl8 then if thwxko[pl] then thwxko[pl].Visible=false end return end
 local ch=pl.Character if not ch then return end
 local rt=ch:FindFirstChild("HumanoidRootPart") if not rt then return end
-y6ua5x7(pl) local l=n0k[pl] if not l then return end
-local vs=hefrja.ViewportSize
-local sp,vis=hefrja:WorldToViewportPoint(rt.Position)
+cvsdjb1(pl) local l=thwxko[pl] if not l then return end
+local vs=twnp.ViewportSize
+local sp,vis=twnp:WorldToViewportPoint(rt.Position)
 if vis then l.From=Vector2.new(vs.X/2,vs.Y) l.To=Vector2.new(sp.X,sp.Y) l.Visible=true
-if vhq.g1liv then l.Color=Color3.fromHSV(wo38/360,1,1) end
+if k0gv.g8jw50 then l.Color=Color3.fromHSV(ezj/360,1,1) end
 else l.Visible=false end end) end
-local function pjrr2mk(pl)
-if pl==gwfo3x then return end
-bdgi0(function()
+local function kpn0r(pl)
+if pl==qgel then return end
+ov6_76ti_(function()
 local ch=pl.Character if not ch then return end local hd=ch:FindFirstChild("Head") if not hd then return end
-if eb6[pl] then bdgi0(function() eb6[pl]:Destroy() end) eb6[pl]=nil end
-local bb=Instance.new("BillboardGui") bb.Name=_I.wmg3..p65bywi(4) bb.Adornee=hd bb.Size=UDim2.new(0,200,0,50) bb.StudsOffset=Vector3.new(0,3,0) bb.AlwaysOnTop=true bb.Parent=ch
-local nl=Instance.new("TextLabel",bb) nl.Name=_I.ubjsh nl.Size=UDim2.new(1,0,0,16) nl.BackgroundTransparency=1 nl.Text=pl.DisplayName nl.TextColor3=Color3.new(1,1,1) nl.TextSize=13 nl.Font=Enum.Font.GothamBold nl.TextStrokeTransparency=0.3
-local dl=Instance.new("TextLabel",bb) dl.Name=_I.zswue dl.Size=UDim2.new(1,0,0,14) dl.Position=UDim2.new(0,0,0,16) dl.BackgroundTransparency=1 dl.Text="[0m]" dl.TextColor3=Color3.fromRGB(0,255,136) dl.TextSize=11 dl.Font=Enum.Font.GothamBold dl.TextStrokeTransparency=0.3
-local hb=Instance.new("Frame",bb) hb.Name=_I.fyljq hb.Size=UDim2.new(0.6,0,0,4) hb.Position=UDim2.new(0.2,0,0,33) hb.BackgroundColor3=Color3.fromRGB(40,40,40) hb.BorderSizePixel=0
-local hf=Instance.new("Frame",hb) hf.Name=_I.oeyq hf.Size=UDim2.new(1,0,1,0) hf.BackgroundColor3=Color3.fromRGB(0,255,0) hf.BorderSizePixel=0
-eb6[pl]=bb end) end
-local function zf8mw4ph(pl)
-bdgi0(function()
-local bb=eb6[pl] if not bb or not bb.Parent then return end
+if wn4[pl] then ov6_76ti_(function() wn4[pl]:Destroy() end) wn4[pl]=nil end
+local bb=Instance.new("BillboardGui") bb.Name=_I.xgz_..rs0rz5(4) bb.Adornee=hd bb.Size=UDim2.new(0,200,0,50) bb.StudsOffset=Vector3.new(0,3,0) bb.AlwaysOnTop=true bb.Parent=ch
+local nl=Instance.new("TextLabel",bb) nl.Name=_I.k4i nl.Size=UDim2.new(1,0,0,16) nl.BackgroundTransparency=1 nl.Text=pl.DisplayName nl.TextColor3=Color3.new(1,1,1) nl.TextSize=13 nl.Font=Enum.Font.GothamBold nl.TextStrokeTransparency=0.3
+local dl=Instance.new("TextLabel",bb) dl.Name=_I.tza0 dl.Size=UDim2.new(1,0,0,14) dl.Position=UDim2.new(0,0,0,16) dl.BackgroundTransparency=1 dl.Text="[0m]" dl.TextColor3=Color3.fromRGB(0,255,136) dl.TextSize=11 dl.Font=Enum.Font.GothamBold dl.TextStrokeTransparency=0.3
+local hb=Instance.new("Frame",bb) hb.Name=_I.mm8 hb.Size=UDim2.new(0.6,0,0,4) hb.Position=UDim2.new(0.2,0,0,33) hb.BackgroundColor3=Color3.fromRGB(40,40,40) hb.BorderSizePixel=0
+local hf=Instance.new("Frame",hb) hf.Name=_I.qbw hf.Size=UDim2.new(1,0,1,0) hf.BackgroundColor3=Color3.fromRGB(0,255,0) hf.BorderSizePixel=0
+wn4[pl]=bb end) end
+local function iq7rhi(pl)
+ov6_76ti_(function()
+local bb=wn4[pl] if not bb or not bb.Parent then return end
 local ch=pl.Character if not ch then return end
-local nl=bb:FindFirstChild(_I.ubjsh) local dl=bb:FindFirstChild(_I.zswue) local hb=bb:FindFirstChild(_I.fyljq)
-if nl then nl.Visible=vhq.qqh6 end
-if dl then dl.Visible=vhq.aposx
-if vhq.aposx then local mc=gwfo3x.Character
+local nl=bb:FindFirstChild(_I.k4i) local dl=bb:FindFirstChild(_I.tza0) local hb=bb:FindFirstChild(_I.mm8)
+if nl then nl.Visible=k0gv.tqt end
+if dl then dl.Visible=k0gv.ft4on
+if k0gv.ft4on then local mc=qgel.Character
 if mc and mc:FindFirstChild("HumanoidRootPart") then local rt=ch:FindFirstChild("HumanoidRootPart")
 if rt then dl.Text=string.format("[%.0fm]",(mc.HumanoidRootPart.Position-rt.Position).Magnitude) end end end end
-if hb then hb.Visible=vhq.dkwzl6
-if vhq.dkwzl6 then local hum=ch:FindFirstChildOfClass("Humanoid")
-if hum then local r=math.clamp(hum.Health/hum.MaxHealth,0,1) local fl=hb:FindFirstChild(_I.oeyq)
+if hb then hb.Visible=k0gv.xk5
+if k0gv.xk5 then local hum=ch:FindFirstChildOfClass("Humanoid")
+if hum then local r=math.clamp(hum.Health/hum.MaxHealth,0,1) local fl=hb:FindFirstChild(_I.qbw)
 if fl then fl.Size=UDim2.new(r,0,1,0) fl.BackgroundColor3=r>0.5 and Color3.fromRGB(0,255,0) or r>0.25 and Color3.fromRGB(255,255,0) or Color3.fromRGB(255,0,0) end end end end end) end
-local function ron7xpyg2(par,nm,v,mn,mx,st,cb)
-local f=Instance.new("Frame",par) f.Size=UDim2.new(1,-16,0,22) f.Position=UDim2.new(0,8,0,jvf6hc) f.BackgroundColor3=Color3.fromRGB(25,25,40) f.BorderSizePixel=0
+local function mdbf83ap(par,nm,v,mn,mx,st,cb)
+local f=Instance.new("Frame",par) f.Size=UDim2.new(1,-16,0,22) f.Position=UDim2.new(0,8,0,rvw) f.BackgroundColor3=Color3.fromRGB(25,25,40) f.BorderSizePixel=0
 Instance.new("UICorner",f).CornerRadius=UDim.new(0,6)
 local lb=Instance.new("TextLabel",f) lb.Size=UDim2.new(0.35,0,1,0) lb.Position=UDim2.new(0,6,0,0) lb.BackgroundTransparency=1 lb.Text=nm lb.TextColor3=Color3.new(1,1,1) lb.TextSize=8 lb.Font=Enum.Font.Gotham lb.TextXAlignment=Enum.TextXAlignment.Left
 local vl=Instance.new("TextLabel",f) vl.Size=UDim2.new(0,26,0,16) vl.Position=UDim2.new(1,-34,0.5,-8) vl.BackgroundTransparency=1 vl.Text=tostring(v) vl.TextColor3=Color3.fromRGB(0,255,136) vl.TextSize=9 vl.Font=Enum.Font.GothamBold
@@ -249,39 +249,36 @@ Instance.new("UICorner",bp).CornerRadius=UDim.new(0,4)
 local cv=v
 bm.MouseButton1Click:Connect(function() cv=math.max(cv-st,mn) vl.Text=tostring(cv) cb(cv) end)
 bp.MouseButton1Click:Connect(function() cv=math.min(cv+st,mx) vl.Text=tostring(cv) cb(cv) end)
-jvf6hc=jvf6hc+24 end
-local function es794jhl(par,nm,val,cb)
-local f=Instance.new("Frame",par) f.Size=UDim2.new(1,-16,0,20) f.Position=UDim2.new(0,8,0,jvf6hc) f.BackgroundColor3=val==vhq.jhw and Color3.fromRGB(40,20,20) or Color3.fromRGB(25,25,40) f.BorderSizePixel=0
+rvw=rvw+24 end
+local function oifge(par,nm,val,cb)
+local f=Instance.new("Frame",par) f.Size=UDim2.new(1,-16,0,20) f.Position=UDim2.new(0,8,0,rvw) f.BackgroundColor3=val==k0gv.ugo7 and Color3.fromRGB(40,20,20) or Color3.fromRGB(25,25,40) f.BorderSizePixel=0
 Instance.new("UICorner",f).CornerRadius=UDim.new(0,6)
 local lb=Instance.new("TextLabel",f) lb.Size=UDim2.new(0.7,0,1,0) lb.Position=UDim2.new(0,6,0,0) lb.BackgroundTransparency=1 lb.Text=nm lb.TextColor3=val=="Head" and Color3.fromRGB(255,100,100) or Color3.fromRGB(255,180,100) lb.TextSize=8 lb.Font=Enum.Font.GothamBold lb.TextXAlignment=Enum.TextXAlignment.Left
-local ind=Instance.new("TextLabel",f) ind.Name="p65bywi(3)" ind.Size=UDim2.new(0,16,1,0) ind.Position=UDim2.new(1,-22,0,0) ind.BackgroundTransparency=1 ind.TextSize=10 ind.Font=Enum.Font.GothamBold
-if val==vhq.jhw then ind.Text="●" ind.TextColor3=Color3.fromRGB(0,255,136) else ind.Text="○" ind.TextColor3=Color3.fromRGB(80,80,80) end
+local ind=Instance.new("TextLabel",f) ind.Name="rs0rz5(3)" ind.Size=UDim2.new(0,16,1,0) ind.Position=UDim2.new(1,-22,0,0) ind.BackgroundTransparency=1 ind.TextSize=10 ind.Font=Enum.Font.GothamBold
+if val==k0gv.ugo7 then ind.Text="●" ind.TextColor3=Color3.fromRGB(0,255,136) else ind.Text="○" ind.TextColor3=Color3.fromRGB(80,80,80) end
 local bt=Instance.new("TextButton",f) bt.Size=UDim2.new(1,0,1,0) bt.BackgroundTransparency=1 bt.Text="" bt.BorderSizePixel=0
 bt.MouseButton1Click:Connect(function() cb(val) end)
-jvf6hc=jvf6hc+22 return {f=f,ind=ind} end
-local function iofj1()
-bdgi0(function()
-b756=Instance.new("ScreenGui") b756.Name=_I.yzx b756.ResetOnSpawn=false b756.Parent=gwfo3x:WaitForChild("PlayerGui")
-tm9n3r=Instance.new("Frame") tm9n3r.Name=_I.m7fjhf tm9n3r.Size=UDim2.new(0,220,0,780) tm9n3r.Position=UDim2.new(0,12,0.5,-390) tm9n3r.BackgroundColor3=Color3.fromRGB(15,15,25) tm9n3r.BorderSizePixel=0 tm9n3r.Active=true tm9n3r.Draggable=true tm9n3r.Visible=vhq.b5431 tm9n3r.Parent=b756
-Instance.new("UICorner",tm9n3r).CornerRadius=UDim.new(0,10)
-local s=Instance.new("UIStroke",tm9n3r) s.Color=Color3.fromRGB(108,43,217) s.Thickness=2
-local tb=Instance.new("Frame",tm9n3r) tb.Size=UDim2.new(1,0,0,24) tb.BackgroundColor3=Color3.fromRGB(108,43,217) tb.BorderSizePixel=0
+rvw=rvw+22 return {f=f,ind=ind} end
+local function tchoopa_3()
+ov6_76ti_(function()
+r381o=Instance.new("ScreenGui") r381o.Name=_I.rdq04 r381o.ResetOnSpawn=false r381o.Parent=qgel:WaitForChild("PlayerGui")
+g529e=Instance.new("Frame") g529e.Name=_I.cu2lwv g529e.Size=UDim2.new(0,220,0,780) g529e.Position=UDim2.new(0,12,0.5,-390) g529e.BackgroundColor3=Color3.fromRGB(15,15,25) g529e.BorderSizePixel=0 g529e.Active=true g529e.Draggable=true g529e.Visible=k0gv.bi7 g529e.Parent=r381o
+Instance.new("UICorner",g529e).CornerRadius=UDim.new(0,10)
+local s=Instance.new("UIStroke",g529e) s.Color=Color3.fromRGB(108,43,217) s.Thickness=2
+local tb=Instance.new("Frame",g529e) tb.Size=UDim2.new(1,0,0,24) tb.BackgroundColor3=Color3.fromRGB(108,43,217) tb.BorderSizePixel=0
 Instance.new("UICorner",tb).CornerRadius=UDim.new(0,10)
-local tl=Instance.new("TextLabel",tb) tl.Size=UDim2.new(1,0,1,0) tl.BackgroundTransparency=1 tl.Text=p65bywi(6) tl.TextColor3=Color3.new(1,1,1) tl.TextSize=10 tl.Font=Enum.Font.GothamBold
-local cl=Instance.new("TextLabel",tm9n3r) cl.Name=_I.t7fts cl.Size=UDim2.new(1,-16,0,10) cl.Position=UDim2.new(0,8,0,26) cl.BackgroundTransparency=1 cl.Text="0" cl.TextColor3=Color3.fromRGB(0,255,136) cl.TextSize=8 cl.Font=Enum.Font.Gotham cl.TextXAlignment=Enum.TextXAlignment.Left
-jvf6hc=38
-local function g73bd(nm,def,cb)
-local f=Instance.new("Frame",tm9n3r) f.Size=UDim2.new(1,-16,0,20) f.Position=UDim2.new(0,8,0,jvf6hc) f.BackgroundColor3=Color3.fromRGB(25,25,40) f.BorderSizePixel=0
+local tl=Instance.new("TextLabel",tb) tl.Size=UDim2.new(1,0,1,0) tl.BackgroundTransparency=1 tl.Text=rs0rz5(6) tl.TextColor3=Color3.new(1,1,1) tl.TextSize=10 tl.Font=Enum.Font.GothamBold
+local cl=Instance.new("TextLabel",g529e) cl.Name=_I.pua cl.Size=UDim2.new(1,-16,0,10) cl.Position=UDim2.new(0,8,0,26) cl.BackgroundTransparency=1 cl.Text="0" cl.TextColor3=Color3.fromRGB(0,255,136) cl.TextSize=8 cl.Font=Enum.Font.Gotham cl.TextXAlignment=Enum.TextXAlignment.Left
+rvw=38
+local function jc0h6wu(nm,def,cb)
+local f=Instance.new("Frame",g529e) f.Size=UDim2.new(1,-16,0,20) f.Position=UDim2.new(0,8,0,rvw) f.BackgroundColor3=Color3.fromRGB(25,25,40) f.BorderSizePixel=0
 Instance.new("UICorner",f).CornerRadius=UDim.new(0,6)
 local lb=Instance.new("TextLabel",f) lb.Size=UDim2.new(0.6,0,1,0) lb.Position=UDim2.new(0,6,0,0) lb.BackgroundTransparency=1 lb.Text=nm lb.TextColor3=Color3.new(1,1,1) lb.TextSize=8 lb.Font=Enum.Font.Gotham lb.TextXAlignment=Enum.TextXAlignment.Left
 local bt=Instance.new("TextButton",f) bt.Size=UDim2.new(0,28,0,14) bt.Position=UDim2.new(1,-34,0.5,-7) bt.BackgroundColor3=def and Color3.fromRGB(0,255,136) or Color3.fromRGB(60,60,80) bt.Text=def and "ON" or "OFF" bt.TextColor3=Color3.new(1,1,1) bt.TextSize=7 bt.Font=Enum.Font.GothamBold bt.BorderSizePixel=0
 Instance.new("UICorner",bt).CornerRadius=UDim.new(0,8)
 local st=def
 bt.MouseButton1Click:Connect(function() st=not st bt.Text=st and "ON" or "OFF" bt.BackgroundColor3=st and Color3.fromRGB(0,255,136) or Color3.fromRGB(60,60,80) cb(st) end)
-jvf6hc=jvf6hc+22 end
-g73bd("Wallhack",vhq.sgu,function(v) vhq.sgu=v end)
-g73bd("Skeleton",vhq.onq5mr,function(v) vhq.onq5mr=v end)
-g73bd("Box ESP",vhq.tvsd,function(v) vhq.tvsd=v end)
-g73bd("Tracers",vhq.b2qid,function(v) vhq.b2qid=v end)
-g73bd("Aimbot",vhq.ir9,function(v) vhq.ir9=v end)
-ron7xpyg2(tm9n3r,"Cross
+rvw=rvw+22 end
+jc0h6wu("Wallhack",k0gv.x7l,function(v) k0gv.x7l=v end)
+jc0h6wu("Skeleton",k0gv.tqxzg9,function(v) k0gv.tqxzg9=v end)
+jc0h6wu("Box ESP",k0gv.sc8cqt,function
