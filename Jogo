@@ -1,0 +1,295 @@
+icemanpoz-rpg/
+
+index.html
+main.js
+
+engine/
+world.js
+player.js
+enemyAI.js
+projectiles.js
+skills.js
+inventory.js
+npc.js
+cities.js
+boss.js
+music.js
+renderer.js
+input.js<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Icemanpoz RPG</title>
+
+<style>
+
+body{
+margin:0;
+background:black;
+overflow:hidden;
+}
+
+canvas{
+image-rendering:pixelated;
+}
+
+#inventory{
+position:absolute;
+right:20px;
+top:50px;
+background:#111;
+padding:10px;
+display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="game"></canvas>
+
+<div id="inventory"></div>
+
+<script src="main.js"></script>
+
+</body>
+</html>const canvas = document.getElementById("game")
+const ctx = canvas.getContext("2d")
+
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+
+let projectiles = []
+let enemies = []
+let npcs = []
+let bosses = []
+let cities = []
+
+////////////////////////////
+//// PLAYER ////////////////
+////////////////////////////
+
+const player = {
+
+x:0,
+y:0,
+hp:100,
+mana:100,
+speed:3,
+skills:{},
+inventory:[]
+
+}
+
+////////////////////////////
+//// INFINITE WORLD ////////
+////////////////////////////
+
+const TILE = 32
+
+function getTile(x,y){
+
+let seed = Math.sin(x*12.9898 + y*78.233)*43758.5453
+let n = seed - Math.floor(seed)
+
+if(n < 0.2) return "water"
+if(n < 0.4) return "forest"
+if(n < 0.6) return "grass"
+if(n < 0.8) return "desert"
+
+return "mountain"
+
+}
+
+function drawWorld(){
+
+let startX = Math.floor(player.x / TILE) - 20
+let startY = Math.floor(player.y / TILE) - 15
+
+for(let x=startX; x<startX+40; x++){
+for(let y=startY; y<startY+30; y++){
+
+let tile = getTile(x,y)
+
+if(tile=="grass") ctx.fillStyle="#2ecc71"
+if(tile=="forest") ctx.fillStyle="#145a32"
+if(tile=="water") ctx.fillStyle="#3498db"
+if(tile=="desert") ctx.fillStyle="#f4d03f"
+if(tile=="mountain") ctx.fillStyle="#888"
+
+ctx.fillRect(
+(x*TILE)-player.x+canvas.width/2,
+(y*TILE)-player.y+canvas.height/2,
+TILE,TILE
+)
+
+}
+}
+
+}function enemyAI(enemy){
+
+let dx = player.x - enemy.x
+let dy = player.y - enemy.y
+let dist = Math.sqrt(dx*dx+dy*dy)
+
+if(dist < 250){
+
+enemy.state = "chase"
+
+}
+
+if(enemy.state=="chase"){
+
+enemy.x += dx*0.02
+enemy.y += dy*0.02
+
+}
+
+if(dist < 60){
+
+player.hp -= 0.2
+
+}
+
+}function shoot(){
+
+projectiles.push({
+
+x:player.x,
+y:player.y,
+vx:Math.cos(angle)*8,
+vy:Math.sin(angle)*8,
+damage:10
+
+})
+
+}
+
+function updateProjectiles(){
+
+projectiles.forEach(p=>{
+
+p.x += p.vx
+p.y += p.vy
+
+enemies.forEach(e=>{
+
+let dx=p.x-e.x
+let dy=p.y-e.y
+let d=Math.sqrt(dx*dx+dy*dy)
+
+if(d<20){
+
+e.hp-=p.damage
+
+}
+
+})
+
+})
+
+}const skillTree = {
+
+fireball:{
+mana:10,
+damage:25
+},
+
+ice:{
+mana:8,
+slow:true
+},
+
+heal:{
+mana:15,
+heal:30
+}
+
+}for(let i=0;i<50;i++){
+
+npcs.push({
+
+x:Math.random()*5000,
+y:Math.random()*5000,
+quest:"Mate 10 inimigos"
+
+})
+
+}for(let i=0;i<10;i++){
+
+cities.push({
+
+x:Math.random()*8000,
+y:Math.random()*8000,
+size:300
+
+})
+
+}bosses.push({
+
+x:2000,
+y:2000,
+hp:2000,
+size:120,
+phase:1
+
+})function openInventory(){
+
+let inv=document.getElementById("inventory")
+
+inv.style.display="block"
+
+inv.innerHTML=""
+
+player.inventory.forEach(item=>{
+
+let div=document.createElement("div")
+
+div.innerText=item
+
+div.draggable=true
+
+inv.appendChild(div)
+
+})
+
+}const musicBattle = new Audio("battle.mp3")
+const musicExplore = new Audio("explore.mp3")
+
+function updateMusic(){
+
+let nearEnemy = enemies.some(e=>{
+
+let dx=e.x-player.x
+let dy=e.y-player.y
+
+return Math.sqrt(dx*dx+dy*dy)<200
+
+})
+
+if(nearEnemy){
+
+musicExplore.pause()
+musicBattle.play()
+
+}else{
+
+musicBattle.pause()
+musicExplore.play()
+
+}
+
+}function loop(){
+
+drawWorld()
+
+updateProjectiles()
+
+enemies.forEach(enemyAI)
+
+requestAnimationFrame(loop)
+
+}
+
+loop()
